@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="register" novalidate>
+        <h2>Sign up</h2>
+        <div class="field">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            autocomplete="off"
+            minlength="3"
+            maxlength="20"
+          />
+          <span>Error</span>
+        </div>
+        <div class="field">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            autocomplete="off"
+            minlength="3"
+            maxlength="20"
+          />
+          <span>Error</span>
+        </div>
+        <div class="field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            autocomplete="off"
+            minlength="3"
+            maxlength="20"
+          />
+          <span>Error</span>
+        </div>
+        <div class="field">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            autocomplete="off"
+            minlength="3"
+            maxlength="20"
+            data-confirm-id="#password"
+          />
+          <span>Error</span>
+        </div>
+        <button type="submit" class="register-button">Sign up</button>
+        <div class="author">Wojciech Bartyzel 2022</div>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
